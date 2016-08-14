@@ -1,3 +1,4 @@
+set backspace=indent,eol,start
 syntax on
 
 " Wrap gitcommit file types at the appropriate length
