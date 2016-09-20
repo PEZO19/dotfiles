@@ -27,6 +27,10 @@ fail () {
   exit
 }
 
+uniqueperl(){
+  perl -ne 'print unless $seen{$_}++' $1
+}
+
 setup_gitconfig () {
   if ! [ -f git/gitconfig.local.symlink ]
   then
